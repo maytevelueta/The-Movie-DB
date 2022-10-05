@@ -15,7 +15,7 @@ Movie listings display the Poster, Title, Average Voting in CSS boxes (card).
 **Hover:**
 The default view is hidden and the Overview of each movie is displayed.
 
-Use JavaScript to connect to the [TMDB api](https://www.themoviedb.org/documentation/api) to access available movie data: Title, Image, Overview and Vote Average. Connect to the TMDB search API to make the website searchable.
+Use JavaScript to connect to the [TMDB api](thttps://www.themoviedb.org/documentation/api) to access available movie data: Title, Image, Overview and Vote Average. Connect to the TMDB search API to make the website searchable.
 
 
 ## Mockups
