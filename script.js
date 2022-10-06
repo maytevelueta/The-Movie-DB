@@ -4,17 +4,9 @@ const APIURL = "https://api.themoviedb.org/3/discover/movie?sort_by=popularity.d
 const IMGPATH = "https://image.tmdb.org/t/p/w1280";
 const SEARCHAPI = "https://api.themoviedb.org/3/search/movie?&api_key=9925d2a8efd45a80c5cad431fc453106&query=";
 
-
-// Starter example of api properties.
-function showMovies(movies) {
-  movies.forEach((movie) => {
-    const { poster_path, title, vote_average, overview } = movie;
-  });
-}
-
-const main = document.getElementById('main-container');
-const form = document.getElementById('form');
-const search = document.getElementById('search');
+const search = document.getElementById("search");
+const button = document.getElementById("button");
+const main = document.getElementById("main");
 
 getMovie(APIURL);
 
@@ -39,17 +31,13 @@ function showMovies(movies) {
                     class="card-img-top"/>
                 <div class="card-body">
                     <h3 class="card-title">${title}</h3>
-                    <p class="card-text">${vote_average}/10</p>
+                    <p class="card-rate">${vote_average}/10</p>
                     <h3 class="card-title">Overview:</h3>
                     <p class="card-text">${overview}</p>
                 </div>
             </div>`;
       main.appendChild(movieEl);
    });
-}
-
-function GoToHomePage() {
-   window.location = '/index.html';
 }
 
 form.addEventListener('submit', e => {

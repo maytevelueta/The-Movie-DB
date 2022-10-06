@@ -10,17 +10,22 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-  <nav class="container">
+  <nav class="nav-container">
   <div class="header">
   <img src="assets/Title.png" width="300" height="25">
-  <input id="search" class="input-search" type="text" placeholder="search" width="317" height="48">
+  <div class="nav-search">
+  <input id="search" class="input-search" type="text" placeholder="Search a movie here!" width="317" height="48">
+  <button id="button" class="search-btn" type="submit">Search</button>
+  </div>
 </div>
 </nav>
-<div class="main">
-  <section id="main-container" class="container"></section>
-</div>
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
-      </script>
+<main class="main-container">
+  <section id="main" class="container"></section>
+</main>
+<script src="script.js">
+</script>
 </body>
+<footer class="footer">
+<p>Follow us!</p>
+</footer>
 </html>

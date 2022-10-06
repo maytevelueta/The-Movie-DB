@@ -12,13 +12,71 @@ html, body {
 }
 
 .header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 20px;
   background-color: #003554;
 }
 
-.navitem {
-  
+.nav-search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
 }
 
-.main {
+.search-btn {
   background-color: black;
+  color: white;
+  border-radius: 16px;
+  border: 2px solid black;
 }
+
+#main {
+  width: 345px;
+  height: 420px;
+  display: grid;
+  grid-template-columns: repeat(4, 250px);
+  grid-template-rows: 150px;
+  grid-gap: 20px;
+}
+
+.card {
+  background-color: #F6F2EF;
+  border-radius: 16px;
+}
+
+.card-body {
+  background-color: #003554;
+  border-radius: 5px;
+  color: white;
+}
+
+.card-rate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFA500;
+}
+
+.card-img-top {
+  width: 300px
+}
+
+img {
+  width: 10px
+  height: 400px  
+}
+
+.footer {
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 630px) {
+  #main {
+  display: flex;
+  justify-content: space-around;
+   }
